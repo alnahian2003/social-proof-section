@@ -1,36 +1,199 @@
+html {
+    font-size: 15px;
+
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
     font-family: 'Spartan',
         sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: 'Spartan',
         sans-serif;
     font-size: 15px;
+    background: url(../assets/images/bg-pattern-top-desktop.svg) left top no-repeat,
+        url(../assets/images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
 }
 
 img {
+    -moz-user-select: none;
     border-radius: 50%;
+    pointer-events: none;
+    user-select: none;
+}
+
+a {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
 }
 
 /* Main Section Styling */
 #main {
     height: 100%;
-    width: 80%;
     margin: 0 auto;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    width: 80%;
 }
 
 /* Main Heading and Description Text styles */
 .heading {
     color: hsl(300, 43%, 22%);
-    font-size: 2.5rem;
+    font-size: 50px;
+    line-height: 1;
 }
 
 .section-description {
     color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 20px 0;
+    width: 90%;
+}
+
+/* First Row Styling */
+.first-row {
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.first-row-first-col,
+.first-row-second-col {
+    width: 50%;
+}
+
+.first-row-first-col {
+    width: 45%;
+}
+
+/* Stars Tabs Styling */
+
+.ratings-tabs {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.stars {
+    align-items: center;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-flow: row;
+    margin: 10px;
+    padding: 20px 30px;
+    text-align: center;
+    width: 450px;
+}
+
+.stars:hover,
+.testimony-tab:hover {
+    transition: .3s ease;
+    box-shadow: 0 20px 50px 0px #00000015;
+
+}
+
+.ratings-title {
+    color: hsl(300, 43%, 22%);
+    margin: 0 20px;
+}
+
+/* Positon the Stars Tabs */
+
+.stars:nth-child(1) {
+    transform: translateX(-50px);
+
+}
+
+.stars:nth-child(2) {
+    transform: translateX(0px);
+
+}
+
+.stars:nth-child(3) {
+    transform: translateX(50px);
+
+}
+
+
+/* Second Row Styling */
+.second-row {
+    margin-bottom: 100px;
+}
+
+.clients-reviews {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.testimony-tab {
+    background-color: hsl(300, 43%, 22%);
+    /* width: 100%;
+    height: 280px; */
+    /* padding: 50px 30px; */
+    padding: 30px 40px;
+    border-radius: 8px;
+    color: hsl(0, 0%, 100%);
+    font-size: 13px;
+}
+
+.testimony-tab:first-child {
+    margin-right: 30px;
+}
+
+.testimony-tab:nth-child(2) {
+
+    transform: translateY(20px);
+}
+
+.testimony-tab:last-child {
+    margin-left: 30px;
+    transform: translateY(40px);
+}
+
+.clients-profile {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: flex-start !important;
+    margin-bottom: 20px;
+}
+
+.client-info {
+    margin-left: -20px;
+}
+
+.avatar img {
+    width: 50%;
+    height: auto;
+}
+
+.name {
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.client-status {
+    color: hsl(333, 80%, 67%);
+}
+
+.testimony {
+    line-height: 1.8;
 }
 
 /* End Main Section Styling */
+
+/* Attribution Styling */
+.attribution {
+    text-align: center;
+}
