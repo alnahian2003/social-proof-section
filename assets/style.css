@@ -45,6 +45,7 @@ a {
     color: hsl(300, 43%, 22%);
     font-size: 50px;
     line-height: 1;
+    font-weight: 700 !important;
 }
 
 .section-description {
@@ -138,8 +139,8 @@ a {
 
 .testimony-tab {
     background-color: hsl(300, 43%, 22%);
-    /* width: 100%;
-    height: 280px; */
+    width: 100%;
+    /* height: 280px; */
     /* padding: 50px 30px; */
     padding: 30px 40px;
     border-radius: 8px;
@@ -196,4 +197,231 @@ a {
 /* Attribution Styling */
 .attribution {
     text-align: center;
+}
+
+/* End All Main Styling */
+
+
+/* Responsive Codes Down Here */
+
+/* Small devices ( Smartphones, Landscape Phones) */
+@media (max-width: 767.98px) {
+    body {
+        font-size: 16px;
+        background: url(../assets/images/bg-pattern-top-mobile.svg) left top no-repeat,
+            url(../assets/images/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
+    }
+
+    #main {
+        width: 90%;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    .heading {
+        font-size: 30px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .section-description {
+        width: 100%;
+        text-align: center;
+        margin: 20px auto;
+
+    }
+
+    .first-row {
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    .first-row-first-col,
+    .first-row-second-col {
+        width: 100%;
+    }
+
+    .first-row-first-col {
+        width: 100%;
+    }
+
+    .stars {
+        display: flex;
+        flex-flow: column;
+        margin: 10px;
+        padding: 20px 30px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .ratings-title {
+        color: hsl(300, 43%, 22%);
+        margin: 5px;
+        text-align: center;
+    }
+
+    .stars:nth-child(1) {
+        transform: translateX(0);
+
+    }
+
+    .stars:nth-child(2) {
+        transform: translateX(0);
+
+    }
+
+    .stars:nth-child(3) {
+        transform: translateX(0);
+
+    }
+
+    .second-row {
+        margin-bottom: 50px;
+    }
+
+    .clients-reviews {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .testimony-tab {
+        margin-bottom: 20px;
+    }
+
+    .testimony-tab:first-child {
+        margin-right: 0;
+    }
+
+    .testimony-tab:nth-child(2) {
+
+        transform: translateY(0);
+    }
+
+    .testimony-tab:last-child {
+        margin-left: 0;
+        transform: translateY(0);
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    body {
+        font-size: 16px;
+        background: url(../assets/images/bg-pattern-top-mobile.svg) left top no-repeat,
+            url(../assets/images/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
+    }
+
+    #main {
+        width: 90%;
+    }
+
+    .heading {
+        font-size: 30px;
+        line-height: 1.5;
+    }
+
+    .section-description {
+        width: 80%;
+        margin: 20px 0;
+
+    }
+
+    .first-row {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    .first-row-first-col,
+    .first-row-second-col {
+        width: 100%;
+    }
+
+    .first-row-first-col {
+        width: 100%;
+    }
+
+    .stars {
+        display: flex;
+        flex-flow: column;
+        margin: 10px;
+        padding: 20px 30px;
+        text-align: center;
+        width: 300px;
+        font-size: 12px !important;
+    }
+
+    .ratings-title {
+        color: hsl(300, 43%, 22%);
+        margin: 5px;
+        text-align: center;
+    }
+
+    .stars:nth-child(1) {
+        transform: translateX(0);
+
+    }
+
+    .stars:nth-child(2) {
+        transform: translateX(0);
+
+    }
+
+    .stars:nth-child(3) {
+        transform: translateX(0);
+
+    }
+
+    .clients-reviews {
+        display: flex;
+        flex-flow: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .testimony-tab {
+        margin-bottom: 20px;
+        background-color: hsl(300, 43%, 22%);
+        width: 100%;
+        /* height: 280px; */
+        /* padding: 50px 30px; */
+        padding: 20px 30px;
+        border-radius: 8px;
+        color: hsl(0, 0%, 100%);
+        font-size: 13px;
+    }
+
+    .testimony-tab:first-child {
+        margin-right: 30px;
+    }
+
+    .testimony-tab:nth-child(2) {
+
+        transform: translateY(20px);
+    }
+
+    .testimony-tab:last-child {
+        margin-left: 30px;
+        transform: translateY(40px);
+    }
+
+    .avatar img {
+        width: 80%;
+        height: auto;
+    }
+
+    .clients-profile {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center !important;
+        margin-bottom: 20px;
+    }
 }
