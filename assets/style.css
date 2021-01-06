@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Spartan',
+        sans-serif;
+}
+
+body {
+    font-family: 'Spartan',
+        sans-serif;
+    font-size: 15px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+/* Main Section Styling */
+#main {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Main Heading and Description Text styles */
+.heading {
+    color: hsl(300, 43%, 22%);
+    font-size: 2.5rem;
+}
+
+.section-description {
+    color: hsl(303, 10%, 53%);
+}
+
+/* End Main Section Styling */
